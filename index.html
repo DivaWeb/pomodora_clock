@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="mystyles.css">
+</head>
+
+<body>
+  <!-- Heading -->
+  <h1>Pomodoro Clock</h1>
+
+  <!-- The shape of the timer -->
+  <div id="tomato">
+    <img src="pictures/tomato4.jpg" alt="tomato" >
+    <!-- time holder -->
+    <p id="timer">25:00</p>
+    <!-- starting and stopping clock -->
+    <div id= "buttons">
+      <button class="timerButton" type = "button" onclick= "begin()">Start</button>
+      <button class="timerButton" type = "button" onClick = "stop()">Stop</button>
+    </div>
+    <!-- Add minutes to session -->
+    <div id = "session">
+      <h3 id="p1">Session Minutes</h3>
+      <p id="p4">Add or subtract minutes from session</p>
+      <p class="amount" onclick = "subtract()"><i class = "fa fa-minus fa-1x" style="color:#d10431;" aria-hidden="true"></i></p>
+      <p class="amount" onclick = "addsTime()"><i class = "fa fa-plus fa-1x" style="color:#d10431;" aria-hidden="true"></i></p>
+    </div>
+    <!-- Add minutes to break time -->
+    <div id = break>
+      <h3 id = "p2">Break Minutes</h3>
+      <p id="p5">Add or Subtract minutes from break timer.</p>
+      <p class="amount" onclick = "subtractBreak()"><i class = "fa fa-minus fa-1x" style="color:#d10431;" aria-hidden="true"></i></p>
+      <p class="amount" onclick = "addBreak()"><i class = "fa fa-plus fa-1x" style="color:#d10431;" aria-hidden="true"></i></p>
+    </div>
+    <!-- Start break timmer -->
+    <div id = "breakClock">
+      <p id="p3">Break Timer</p>
+      <p id="brMinutes">5:00</p>
+      <button class = "brStart" onclick="begin2()">Start</button>
+      <button class= "brStart" onclick = "brStop()">Stop</button>
+    </div>
+  </div>
+  <!-- script tags -->
+  <script src="https://use.fontawesome.com/9afead6532.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="my_javascript.js"></script>
+</body>
+</html>
